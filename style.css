@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     display: flex;
@@ -12,21 +12,39 @@ body {
 .container {
     text-align: center;
     background: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #28a745;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 25px;
+    font-size: 20px;
     color: white;
     background-color: #28a745;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
 }
