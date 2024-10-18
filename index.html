@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LotoGenius</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bem-vindo à LotoGenius!</h1>
-    <button onclick="gerarNumero()">Clique para gerar um número!</button>
+    <div class="container">
+        <h1>Bem-vindo à LotoGenius!</h1>
+        <p>Pressione o botão para gerar um número da sorte.</p>
+        <button onclick="gerarNumero()"><i class="fas fa-dice"></i> Clique para gerar um número!</button>
+        <div id="resultado"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
